@@ -13,6 +13,44 @@ import cayla from "../../assets/images/cayla-bradley-profile.jpg";
 
 import { useCareerDetails } from "../../context/CareerContext";
 
+const teamMembers = [
+  {
+    image: juan,
+    name: "Juan Carlos Yao",
+    title: "Product Manager",
+    fact: "I love to travel and collect pins from places I have visited!",
+    link: "https://www.linkedin.com/in/juancarlosyao",
+  },
+  {
+    image: jon,
+    name: "Jon Chiang",
+    title: "Product Designer",
+    fact: "I love any and all racket sports including badminton, tennis, and pickleball!",
+    link: "https://www.linkedin.com/in/jmchiang5",
+  },
+  {
+    image: jay,
+    name: "Juan Hernandez",
+    title: "Developer",
+    fact: "I have a twin sister and she is 1 minute older!",
+    link: "http://linkedin.com/in/j-hernandez-dev",
+  },
+  {
+    image: me,
+    name: "John Clapper",
+    title: "Developer",
+    fact: "I love Christmas!",
+    link: "https://www.linkedin.com/in/john-clapper",
+  },
+  {
+    image: cayla,
+    name: "Cayla Bradley",
+    title: "Developer",
+    fact: "I enjoy training in Muay Thai and Jiu Jitsu in my free time!",
+    link: "https://www.linkedin.com/in/caylabradley/",
+  },
+];
+
 export const LandingPage = () => {
   const navigate = useNavigate();
   const { careerDetails } = useCareerDetails();
@@ -124,41 +162,16 @@ export const LandingPage = () => {
             Meet the Team
           </h1>
           <div className="flex flex-wrap justify-center gap-5">
-            <TeamCard
-              image={juan}
-              name="Juan Carlos Yao"
-              title="Product Manager"
-              fact="I love to travel and collect pins from places I have visited!"
-              link="https://www.linkedin.com/in/juancarlosyao"
-            />
-            <TeamCard
-              image={jon}
-              name="Jon Chiang"
-              title="Product Designer"
-              fact="I love any and all racket sports including badminton, tennis, and pickleball!"
-              link="https://www.linkedin.com/in/jmchiang5"
-            />
-            <TeamCard
-              image={jay}
-              name="Juan Hernandez"
-              title="Developer"
-              fact="I have a twin sister and she is 1 minute older!"
-              link="http://linkedin.com/in/j-hernandez-dev"
-            />
-            <TeamCard
-              image={me}
-              name="John Clapper"
-              title="Developer"
-              fact="I love Christmas!"
-              link="https://www.linkedin.com/in/john-clapper"
-            />
-            <TeamCard
-              image={cayla}
-              name="Cayla Bradley"
-              title="Developer"
-              fact="I enjoy training in Muay Thai and Jiu Jitsu in my free time!"
-              link="https://www.linkedin.com/in/caylabradley/"
-            />
+            {teamMembers.map((member, index) => (
+              <TeamCard
+                key={index}
+                image={member.image}
+                name={member.name}
+                title={member.title}
+                fact={member.fact}
+                link={member.link}
+              />
+            ))}
           </div>
         </div>
       </div>
