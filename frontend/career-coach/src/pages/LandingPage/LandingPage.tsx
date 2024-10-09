@@ -9,6 +9,7 @@ import jay from "../../assets/images/jay.jpg";
 import jon from "../../assets/images/jon.jpg";
 import me from "../../assets/images/me2.jpg";
 import juan from "../../assets/images/JuanCarlos.jpg";
+import cayla from "../../assets/images/cayla-bradley-profile.jpg";
 
 import { useCareerDetails } from "../../context/CareerContext";
 
@@ -122,7 +123,7 @@ export const LandingPage = () => {
           <h1 className="font-bold text-sm lg:text-xxl gradient-text bg-logo text-center w-full lg:leading-normal">
             Meet the Team
           </h1>
-          <div className="flex flex-col lg:flex-row justify-center gap-5">
+          <div className="flex flex-wrap justify-center gap-5">
             <TeamCard
               image={juan}
               name="Juan Carlos Yao"
@@ -150,6 +151,13 @@ export const LandingPage = () => {
               title="Developer"
               fact="I love Christmas!"
               link="https://www.linkedin.com/in/john-clapper"
+            />
+            <TeamCard
+              image={cayla}
+              name="Cayla Bradley"
+              title="Developer"
+              fact="I enjoy training in Muay Thai and Jiu Jitsu in my free time!"
+              link="https://www.linkedin.com/in/caylabradley/"
             />
           </div>
         </div>
