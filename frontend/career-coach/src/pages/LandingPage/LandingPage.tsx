@@ -23,10 +23,10 @@ export const LandingPage = () => {
   console.log(careerDetails);
   return (
     <div className="flex flex-col min-h-screen leading-8 lg:leading-8">
-      <div className="mt-8 lg:mx-10 px-5">
+      <div className="mt-8 lg:mx-10 px-5 space-y-12">
         <section className="flex flex-col items-center text-center mt-16 md:mt-24 lg:mt-28">
           <div className="flex flex-col max-w-[957px]">
-            <p className="text-purpleText2 font-bold text-xs md:text-3xl lg:text-3xl">
+            <p className="text-purpleText2 font-bold text-xs md:text-3xl">
               Get your DREAM JOB with our
             </p>
             <div className="inline-flex items-center justify-center min-w-96">
@@ -39,7 +39,7 @@ export const LandingPage = () => {
                 />
               </h2>
             </div>
-            <p className="font-medium text-xs md:text-3xl lg:text-2xl text-gray-700 mt-5 md:mt-7 lg:mx-12">
+            <p className="font-medium text-xs md:text-2xl lg:text-3xl text-gray-700 mt-5 md:mt-7 lg:px-12">
               Discover personalized courses, expert guidance, and a roadmap to
               your dream career, all powered by ChatGPT!
             </p>
@@ -62,27 +62,25 @@ export const LandingPage = () => {
           </div>
         </section>
 
-        <section className="hidden lg:flex flex-col items-center space-y-7 lg:space-y-14 lg:my-14">
-          <div className="max-w-[94rem]">
-            <h1 className="font-bold text-xxl gradient-text bg-logo text-center lg:leading-normal">
-              What is a Career Roadmap?
-            </h1>
-            <p className="font-medium text-base text-center">
-              A career roadmap is your personalized guide to success, like a GPS
-              for your career journey. It lists the optimal courses for you to
-              take, outlines the steps needed to achieve your goals, and tracks
-              your progress! With our platform, you'll have access to a tailored
-              roadmap that empowers you to take control of your professional
-              future.
-            </p>
-          </div>
+        <section className="flex flex-col items-center space-y-7 lg:space-y-14 lg:my-14">
+          <h1 className="font-bold text-2xl md:text-4xl xl:text-5xl gradient-text bg-logo text-center lg:leading-normal">
+            What is a Career Roadmap?
+          </h1>
+          <p className="font-medium text-xs md:text-2xl lg:text-3xl text-center lg:px-16">
+            A career roadmap is your personalized guide to success, like a GPS
+            for your career journey. It lists the optimal courses for you to
+            take, outlines the steps needed to achieve your goals, and tracks
+            your progress! With our platform, you'll have access to a tailored
+            roadmap that empowers you to take control of your professional
+            future.
+          </p>
         </section>
 
-        <section className="overflow-x-hidden space-y-7 lg:space-y-14 lg:my-14">
-          <h1 className="font-bold text-sm lg:text-xxl gradient-text bg-logo text-center w-full lg:leading-normal">
+        <section className="overflow-x-hidden space-y-7 lg:space-y-14 lg:my-14 flex flex-col">
+          <h1 className="font-bold text-2xl md:text-4xl xl:text-5xl gradient-text bg-logo text-center w-full lg:leading-normal">
             How It Works
           </h1>
-          <div className="row grid grid-cols-3">
+          <div className="lg:grid lg:grid-cols-3">
             <div className="border-4 border-purpleText rounded-lg col-span-1 py-10 px-5 text-center">
               <h2 className="text-purpleText font-bold text-4xl/[1.4] mb-4">
                 Step 1
@@ -95,7 +93,7 @@ export const LandingPage = () => {
                 lifetime. This helps us tailor your roadmap
               </p>
             </div>
-            <div className="col-span-2 flex justify-between flex-col py-16 pl-5">
+            <div className="hidden lg:flex col-span-2 justify-between flex-col py-16 pl-5 xl:text-sm xl:space-y-6">
               <p>
                 <span className="bg-landing-page inline-block text-transparent bg-clip-text font-bold inline-block">
                   I want to be a...
@@ -108,7 +106,7 @@ export const LandingPage = () => {
                     Frontend Developer
                   </span>
                 </span>
-                <span className="bg-landing-page rounded-full p-1 inline-block ml-2">
+                <span className="bg-landing-page rounded-full p-1 inline-block ml-2 xl:hidden">
                   <span className="h-full w-full bg-ligthPurple rounded-full text-purpleText p-2">
                     Data Scientist
                   </span>
@@ -141,14 +139,29 @@ export const LandingPage = () => {
             alt="purple right arrow"
             className="mx-auto w-[68%]"
           />
-          <div className="row grid grid-cols-3 ">
-            <div className="col-span-2">
-              <div className="inline-block h-100 align-middle"></div>
-              <img
-                src={roadmapSample}
-                alt="roadmap step sample"
-                className="mx-auto align-middle w-full"
-              />
+          <div className="lg:grid lg:grid-cols-3 gap-3">
+            <div className="hidden lg:flex col-span-2 flex flex-col border-4 border-purpleText rounded-md p-6">
+              <h1 className="text-purpleText font-bold text-2xl">
+                Month 1: Introduction to UX/UI Design
+              </h1>
+              <p className="text-purpleText">
+                In the initial two months, you'll lay the foundation by
+                immersing yourself in the "UX Design Fundamentals" course on
+                Coursera. This comprehensive introduction will provide insights
+                into the principles and processes that underpin effective UX and
+                UI design.
+              </p>
+
+              <div className="space-y-1 bg-purpleLight border-2 border-purpleText rounded-md p-3 text-purpleText leading-[15.6px] lg:leading-[25px] mt-3 h-60%">
+                <p className="underline">Course Name: UX Design Fundamentals</p>
+                <p>Duration: 4 weeks (approx. 20 hours a week)</p>
+                <p>Skill Level: Beginner</p>
+                <p>Price: Free (audit option available)</p>
+                <p>
+                  Description: This course provides an introduction to UX design
+                  principles
+                </p>
+              </div>
             </div>
             <div className="col-span-1 border-4 border-purpleText rounded-lg py-10 px-5 text-center">
               <h2 className="text-purpleText font-bold text-4xl/[1.4] mb-4 ">
@@ -168,7 +181,7 @@ export const LandingPage = () => {
             alt="purple left arrow"
             className="mx-auto w-[68%]"
           />
-          <div className="row grid grid-cols-3">
+          <div className="lg:grid lg:grid-cols-3">
             <div className="col-span-1 border-4 border-purpleText rounded-lg py-10 px-5 text-center">
               <h2 className="text-purpleText font-bold text-4xl/[1.4] mb-4">
                 Step 3
@@ -178,23 +191,60 @@ export const LandingPage = () => {
               </h3>
               <p className="text-blackText text-2xl/[1.25] font-medium">
                 Follow your roadmap and track your progress as you learn.
-                Acheive your career goals step by step
+                Achieve your career goals step by step.
               </p>
             </div>
-            <div className="col-span-2 py-10">
-              <div className="inline-block h-100 align-middle"></div>
-              <img
-                // absolute top-[50%] left-[50%] -translate-[50%]
-                src={progressTracker}
-                alt="purple pagination counter"
-                className="mx-auto align-middle"
-              />
+            <div className="hidden lg:flex lg:col-span-2 m-auto">
+              <div className="flex space-x-8 m-auto">
+                <div className="flex flex-col text-center">
+                  <p className="text-purpleText font-bold text-3xl mb-2">1</p>
+                  <span className="inline-block bg-purpleText border-3 border-purpleText2 w-[3rem] h-[3rem] rounded-full shadow-purpleText2 shadow-md">
+                    &nbsp;
+                  </span>
+                </div>
+                <div className="flex flex-col text-center">
+                  <p className="text-purpleText font-bold text-3xl mb-2">2</p>
+                  <span className="inline-block bg-purpleText border-3 border-purpleText2 w-[3rem] h-[3rem] rounded-full shadow-purpleText2 shadow-md">
+                    &nbsp;
+                  </span>
+                </div>
+                <div className="flex flex-col text-center">
+                  <p className="text-purpleText font-bold text-3xl mb-2">3</p>
+                  <span className="inline-block bg-purpleText border-3 border-purpleText2 w-[3rem] h-[3rem] rounded-full shadow-purpleText2 shadow-md">
+                    &nbsp;
+                  </span>
+                </div>
+                <div className="flex flex-col text-center">
+                  <p className="text-purpleText font-bold text-3xl mb-2">4</p>
+                  <span className="inline-block bg-purpleText border-3 border-purpleText2 w-[3rem] h-[3rem] rounded-full shadow-purpleText2 shadow-md">
+                    &nbsp;
+                  </span>
+                </div>
+                <div className="flex flex-col text-center">
+                  <p className="text-purpleText font-bold text-3xl mb-2">5</p>
+                  <span className="inline-block bg-purpleLight border-4 border-purpleText w-[3rem] h-[3rem] rounded-full shadow-purpleText2 shadow-md">
+                    &nbsp;
+                  </span>
+                </div>
+                <div className="flex flex-col text-center">
+                  <p className="text-purpleText font-bold text-3xl mb-2">6</p>
+                  <span className="inline-block bg-purpleLight border-4 border-purpleText w-[3rem] h-[3rem] rounded-full shadow-purpleText2 shadow-md">
+                    &nbsp;
+                  </span>
+                </div>
+                <div className="flex flex-col text-center">
+                  <p className="text-purpleText font-bold text-3xl mb-2">7</p>
+                  <span className="inline-block bg-purpleLight border-4 border-purpleText w-[3rem] h-[3rem] rounded-full shadow-purpleText2 shadow-md">
+                    &nbsp;
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
         <section className="overflow-x-hidden space-y-7 lg:space-y-14 lg:my-14">
-          <h1 className="font-bold text-sm lg:text-xxl gradient-text bg-logo text-center w-full lg:leading-normal">
+          <h1 className="font-bold text-2xl md:text-4xl xl:text-5xl gradient-text bg-logo text-center w-full lg:leading-normal">
             Your Path to Success
           </h1>
           <div className="flex flex-col lg:flex-row items-center justify-center gap-5">
@@ -244,7 +294,7 @@ export const LandingPage = () => {
         </section>
 
         <section className="overflow-x-hidden space-y-7 lg:space-y-14 lg:my-14">
-          <h1 className="font-bold text-sm lg:text-xxl gradient-text bg-logo text-center w-full lg:leading-normal">
+          <h1 className="font-bold text-2xl md:text-4xl xl:text-5xl gradient-text bg-logo text-center w-full lg:leading-normal">
             Meet the Team
           </h1>
           <div className="flex flex-wrap justify-center  xl:px-16 2xl:px-4 lg:flex-row gap-5">
