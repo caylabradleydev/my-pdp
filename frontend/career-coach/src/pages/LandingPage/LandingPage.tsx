@@ -12,8 +12,6 @@ import me from "../../assets/images/me2.jpg";
 import juan from "../../assets/images/JuanCarlos.jpg";
 import arrowRight from "../../assets/images/arrow-right.png";
 import arrowLeft from "../../assets/images/arrow-left.png";
-import progressTracker from "../../assets/images/progress-tracker.png";
-import roadmapSample from "../../assets/images/course-container-minimize.png";
 
 import { useCareerDetails } from "../../context/CareerContext";
 
@@ -243,18 +241,18 @@ export const LandingPage = () => {
           </div>
         </section>
 
-        <section className="overflow-x-hidden space-y-7 lg:space-y-14 lg:my-14">
+        <section className="overflow-x-hidden space-y-7 lg:space-y-14">
           <h1 className="font-bold text-2xl md:text-4xl xl:text-5xl gradient-text bg-logo text-center w-full lg:leading-normal">
             Your Path to Success
           </h1>
           <div className="flex flex-col lg:flex-row items-center justify-center gap-5">
-            <div className="flex flex-col items-center border-2 border-purpleText rounded-md lg:gap-7 gap-2 p-5 lg:w-[430px] lg:h-[470px]">
+            <div className="flex flex-col items-center border-2 border-purpleText rounded-md lg:gap-4 gap-2 p-5 lg:w-[430px] lg:min-h-[470px]">
               <img
                 src={skillDev}
                 alt="Man running"
                 className="w-[100px] lg:w-[200px] lg:h-[200px]"
               />
-              <h6 className="font-bold text-xs lg:text-sm text-purpleText">
+              <h6 className="font-bold text-xs lg:text-sm text-purpleText text-center">
                 Skill development roadmap
               </h6>
               <p className="font-medium text-xxs lg:text-sm text-center max-w-[24rem]">
@@ -262,13 +260,13 @@ export const LandingPage = () => {
                 succeed in your chosen career path.
               </p>
             </div>
-            <div className="flex flex-col items-center border-2 border-purpleText rounded-md gap-7 p-5 lg:w-[430px] lg:h-[470px]">
+            <div className="flex flex-col items-center border-2 border-purpleText rounded-md lg:gap-4 gap-2 p-5 lg:w-[430px] lg:min-h-[470px]">
               <img
                 src={progress}
                 alt="Woman showing progress chart"
                 className="w-[100px] lg:w-[200px] lg:h-[200px]"
               />
-              <h6 className="font-bold text-xs lg:text-sm text-purpleText">
+              <h6 className="font-bold text-xs lg:text-sm text-purpleText text-center">
                 Progress Tracking and Analytics
               </h6>
               <p className="font-medium text-xxs lg:text-sm text-center max-w-[24rem]">
@@ -276,18 +274,18 @@ export const LandingPage = () => {
                 detailed analytics and performance insights.
               </p>
             </div>
-            <div className="flex flex-col items-center border-2 border-purpleText rounded-md gap-7 p-5 lg:w-[430px] lg:h-[470px]">
+            <div className="flex flex-col items-center border-2 border-purpleText rounded-md lg:gap-4 gap-2 p-5 lg:w-[430px] lg:min-h-[470px] xl:min-h-[470px]">
               <img
                 src={career}
                 alt="Man looking through binoculars at a city"
                 className="w-[100px] lg:w-[200px] lg:h-[200px]"
               />
-              <h6 className="font-bold text-xs lg:text-sm text-purpleText">
+              <h6 className="font-bold text-xs lg:text-sm text-purpleText text-center">
                 Career Path Exploration
               </h6>
               <p className="font-medium text-xxs lg:text-sm text-center max-w-[24rem]">
-                Explore various career paths aligned with your interests and
-                skills with detailed insights and recommendations.
+                Explore career paths aligned with your interests and skills with
+                detailed insights and recommendations.
               </p>
             </div>
           </div>
