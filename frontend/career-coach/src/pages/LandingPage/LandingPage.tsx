@@ -9,6 +9,10 @@ import jay from "../../assets/images/jay.jpg";
 import jon from "../../assets/images/jon.jpg";
 import me from "../../assets/images/me2.jpg";
 import juan from "../../assets/images/JuanCarlos.jpg";
+import arrowRight from "../../assets/images/arrow-right.png";
+import arrowLeft from "../../assets/images/arrow-left.png";
+import progressTracker from "../../assets/images/progress-tracker.png";
+import roadmapSample from "../../assets/images/course-container-minimize.png";
 
 import { useCareerDetails } from "../../context/CareerContext";
 
@@ -56,22 +60,139 @@ export const LandingPage = () => {
             />
           </div>
         </section>
-        <div className="overflow-x-hidden space-y-7 lg:space-y-14 lg:my-14">
-          <div className="hidden lg:flex flex-col items-center">
-            <div className="max-w-[94rem]">
-              <h1 className="font-bold text-xxl gradient-text bg-logo text-center lg:leading-normal">
-                What is a Career Roadmap?
-              </h1>
-              <p className="font-medium text-base text-center">
-                A career roadmap is your personalized guide to success, like a
-                GPS for your career journey. It lists the optimal courses for
-                you to take, outlines the steps needed to achieve your goals,
-                and tracks your progress! With our platform, you'll have access
-                to a tailored roadmap that empowers you to take control of your
-                professional future.
+
+        <section className="hidden lg:flex flex-col items-center space-y-7 lg:space-y-14 lg:my-14">
+          <div className="max-w-[94rem]">
+            <h1 className="font-bold text-xxl gradient-text bg-logo text-center lg:leading-normal">
+              What is a Career Roadmap?
+            </h1>
+            <p className="font-medium text-base text-center">
+              A career roadmap is your personalized guide to success, like a GPS
+              for your career journey. It lists the optimal courses for you to
+              take, outlines the steps needed to achieve your goals, and tracks
+              your progress! With our platform, you'll have access to a tailored
+              roadmap that empowers you to take control of your professional
+              future.
+            </p>
+          </div>
+        </section>
+
+        <section className="overflow-x-hidden space-y-7 lg:space-y-14 lg:my-14">
+          <h1 className="font-bold text-sm lg:text-xxl gradient-text bg-logo text-center w-full lg:leading-normal">
+            How It Works
+          </h1>
+          <div className="row grid grid-cols-3">
+            <div className="border-4 border-purpleText rounded-lg col-span-1 py-10 px-5 text-center">
+              <h2 className="text-purpleText font-bold text-4xl/[1.4] mb-4">
+                Step 1
+              </h2>
+              <h3 className="text-purpleText text-2xl/[1.25] mb-4 font-bold">
+                Input Your Information
+              </h3>
+              <p className="text-blackText text-2xl/[1.25] font-medium">
+                Tell us about your current skills, career goals, budget, and
+                lifetime. This helps us tailor your roadmap
+              </p>
+            </div>
+            <div className="col-span-2 flex justify-between flex-col py-16 pl-5">
+              <p>
+                <span className="bg-landing-page inline-block text-transparent bg-clip-text font-bold inline-block">
+                  I want to be a...
+                </span>
+                <span className="bg-landing-page rounded-full p-1 font-semibold text-white inline-block ml-2">
+                  Product Designer
+                </span>
+                <span className="bg-landing-page rounded-full p-1 inline-block ml-2">
+                  <span className="h-full w-full bg-ligthPurple rounded-full text-purpleText p-2">
+                    Frontend Developer
+                  </span>
+                </span>
+                <span className="bg-landing-page rounded-full p-1 inline-block ml-2">
+                  <span className="h-full w-full bg-ligthPurple rounded-full text-purpleText p-2">
+                    Data Scientist
+                  </span>
+                </span>
+              </p>
+              <p className="text-purpleText font-bold text-right">
+                What is your
+                <span className="bg-landing-page inline-block text-transparent bg-clip-text">
+                  &nbsp; Expected Level &nbsp;
+                </span>
+                at your new job?
+              </p>
+              <p className="text-purpleText font-bold">
+                How many
+                <span className="bg-landing-page inline-block text-transparent bg-clip-text">
+                  &nbsp; hours per week &nbsp;
+                </span>
+                can you dedicate?
+              </p>
+              <p className="text-purpleText font-bold text-right">
+                What is you prefered
+                <span className="bg-landing-page inline-block text-transparent bg-clip-text">
+                  &nbsp; learning style? &nbsp;
+                </span>
               </p>
             </div>
           </div>
+          <img
+            src={arrowRight}
+            alt="purple right arrow"
+            className="mx-auto w-[68%]"
+          />
+          <div className="row grid grid-cols-3 ">
+            <div className="col-span-2">
+              <div className="inline-block h-100 align-middle"></div>
+              <img
+                src={roadmapSample}
+                alt="roadmap step sample"
+                className="mx-auto align-middle w-full"
+              />
+            </div>
+            <div className="col-span-1 border-4 border-purpleText rounded-lg py-10 px-5 text-center">
+              <h2 className="text-purpleText font-bold text-4xl/[1.4] mb-4 ">
+                Step 2
+              </h2>
+              <h3 className="text-purpleText text-2xl/[1.25] mb-4 font-bold">
+                Get Your Roadmap
+              </h3>
+              <p className="text-blackText text-2xl/[1.25] font-medium">
+                Receive a personalized career roadmap with recommended courses
+                and resources based on your inputs
+              </p>
+            </div>
+          </div>
+          <img
+            src={arrowLeft}
+            alt="purple left arrow"
+            className="mx-auto w-[68%]"
+          />
+          <div className="row grid grid-cols-3">
+            <div className="col-span-1 border-4 border-purpleText rounded-lg py-10 px-5 text-center">
+              <h2 className="text-purpleText font-bold text-4xl/[1.4] mb-4">
+                Step 3
+              </h2>
+              <h3 className="text-purpleText text-2xl/[1.25] mb-4 font-bold ">
+                Start Learning
+              </h3>
+              <p className="text-blackText text-2xl/[1.25] font-medium">
+                Follow your roadmap and track your progress as you learn.
+                Acheive your career goals step by step
+              </p>
+            </div>
+            <div className="col-span-2 py-10">
+              <div className="inline-block h-100 align-middle"></div>
+              <img
+                // absolute top-[50%] left-[50%] -translate-[50%]
+                src={progressTracker}
+                alt="purple pagination counter"
+                className="mx-auto align-middle"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section className="overflow-x-hidden space-y-7 lg:space-y-14 lg:my-14">
           <h1 className="font-bold text-sm lg:text-xxl gradient-text bg-logo text-center w-full lg:leading-normal">
             Your Path to Success
           </h1>
@@ -119,6 +240,9 @@ export const LandingPage = () => {
               </p>
             </div>
           </div>
+        </section>
+
+        <section className="overflow-x-hidden space-y-7 lg:space-y-14 lg:my-14">
           <h1 className="font-bold text-sm lg:text-xxl gradient-text bg-logo text-center w-full lg:leading-normal">
             Meet the Team
           </h1>
@@ -152,7 +276,7 @@ export const LandingPage = () => {
               link="https://www.linkedin.com/in/john-clapper"
             />
           </div>
-        </div>
+        </section>
       </div>
       <div className="mt-6 lg:mt-auto">
         <Footer />
