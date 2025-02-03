@@ -247,7 +247,7 @@ export const LandingPage = () => {
           <h1 className="font-bold text-sm lg:text-xxl gradient-text bg-logo text-center w-full lg:leading-normal">
             Meet the Team
           </h1>
-          <div className="flex flex-wrap justify-center lg:flex-row gap-5">
+          <div className="flex flex-wrap justify-center  xl:px-16 2xl:px-4 lg:flex-row gap-5">
             <TeamCard
               image={juan}
               name="Juan Carlos Yao"
