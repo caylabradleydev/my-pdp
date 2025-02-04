@@ -101,12 +101,12 @@ export const LandingPage = () => {
                   Product Designer
                 </span>
                 <span className="bg-landing-page rounded-full p-1 inline-block ml-2">
-                  <span className="h-full w-full bg-ligthPurple rounded-full text-purpleText p-2">
+                  <span className="h-full w-full bg-ligthPurple rounded-full text-purpleText p-1">
                     Frontend Developer
                   </span>
                 </span>
-                <span className="bg-landing-page rounded-full p-1 inline-block ml-2 xl:hidden">
-                  <span className="h-full w-full bg-ligthPurple rounded-full text-purpleText p-2">
+                <span className="bg-landing-page rounded-full p-[2px] inline-block ml-2 xl:hidden">
+                  <span className="h-full w-full flex items-center justify-center bg-ligthPurple rounded-full text-purpleText p-1">
                     Data Scientist
                   </span>
                 </span>

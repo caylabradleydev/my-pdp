@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: "class",
   theme: {
     extend: {
       fontFamily: {
@@ -36,6 +37,8 @@ export default {
         disabled: "#A9A9A9",
         cardHover: "#9FA4FF",
         blackText: "#1e1e1e",
+        bgDark: "060606",
+        bgDark2: "100B2B",
       },
       backgroundImage: {
         "desired-job":
