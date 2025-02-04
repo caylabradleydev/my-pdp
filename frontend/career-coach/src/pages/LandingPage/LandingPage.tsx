@@ -12,6 +12,7 @@ import me from "../../assets/images/me2.jpg";
 import juan from "../../assets/images/JuanCarlos.jpg";
 import arrowRight from "../../assets/images/arrow-right.png";
 import arrowLeft from "../../assets/images/arrow-left.png";
+import checkmark from "../../assets/images/check.png";
 
 import { useCareerDetails } from "../../context/CareerContext";
 
@@ -193,44 +194,60 @@ export const LandingPage = () => {
               </p>
             </div>
             <div className="hidden lg:flex lg:col-span-2 m-auto">
-              <div className="flex space-x-8 m-auto">
+              <div className="flex  m-auto">
                 <div className="flex flex-col text-center">
                   <p className="text-purpleText font-bold text-3xl mb-2">1</p>
-                  <span className="inline-block bg-purpleText border-3 border-purpleText2 w-[3rem] h-[3rem] rounded-full shadow-purpleText2 shadow-md">
-                    &nbsp;
-                  </span>
+                  <span className="inline-block bg-purpleText border-3 border-purpleText2 w-[3rem] h-[3rem] rounded-full shadow-purpleText2 shadow-md"></span>
                 </div>
-                <div className="flex flex-col text-center">
+                <div className="flex flex-col text-center py-[1rem] overflow-hidden">
+                  <span className="w-[3rem] h-[3rem] "></span>
+                  <span className="inline-block bg-purpleText w-[2rem] h-[.5rem] rounded-full -ml-1"></span>
+                </div>
+                <div className="flex flex-col text-center -ml-6">
                   <p className="text-purpleText font-bold text-3xl mb-2">2</p>
-                  <span className="inline-block bg-purpleText border-3 border-purpleText2 w-[3rem] h-[3rem] rounded-full shadow-purpleText2 shadow-md">
-                    &nbsp;
-                  </span>
+                  <span className="inline-block bg-purpleText border-3 border-purpleText2 w-[3rem] h-[3rem] rounded-full shadow-purpleText2 shadow-md"></span>
                 </div>
-                <div className="flex flex-col text-center">
+                <div className="flex flex-col text-center py-[1rem] overflow-hidden">
+                  <span className="w-[3rem] h-[3rem] "></span>
+                  <span className="inline-block bg-purpleText w-[2rem] h-[.5rem] rounded-full -ml-1"></span>
+                </div>
+                <div className="flex flex-col text-center -ml-6">
                   <p className="text-purpleText font-bold text-3xl mb-2">3</p>
-                  <span className="inline-block bg-purpleText border-3 border-purpleText2 w-[3rem] h-[3rem] rounded-full shadow-purpleText2 shadow-md">
-                    &nbsp;
-                  </span>
+                  <span className="inline-block bg-purpleText w-[3rem] h-[3rem] rounded-full shadow-purpleText2 shadow-md"></span>
                 </div>
-                <div className="flex flex-col text-center">
+                <div className="flex flex-col text-center py-[1rem] overflow-hidden">
+                  <span className="w-[3rem] h-[3rem] "></span>
+                  <span className="inline-block bg-purpleText w-[2rem] h-[.5rem] rounded-full -ml-1"></span>
+                </div>
+                <div className="flex flex-col text-center -ml-6">
                   <p className="text-purpleText font-bold text-3xl mb-2">4</p>
-                  <span className="inline-block bg-purpleText border-3 border-purpleText2 w-[3rem] h-[3rem] rounded-full shadow-purpleText2 shadow-md">
-                    &nbsp;
-                  </span>
+                  <span className="inline-block bg-purpleText w-[3rem] h-[3rem] rounded-full shadow-purpleText2 shadow-md"></span>
                 </div>
-                <div className="flex flex-col text-center">
+                <div className="flex flex-col text-center py-[1rem] overflow-hidden">
+                  <span className="w-[3rem] h-[3rem] "></span>
+                  <span className="inline-block bg-purpleText w-[2rem] h-[.5rem] rounded-full -mx-1"></span>
+                </div>
+                <div className="flex flex-col text-center -ml-6">
                   <p className="text-purpleText font-bold text-3xl mb-2">5</p>
                   <span className="inline-block bg-purpleLight border-4 border-purpleText w-[3rem] h-[3rem] rounded-full shadow-purpleText2 shadow-md">
                     &nbsp;
                   </span>
                 </div>
-                <div className="flex flex-col text-center">
+                <div className="flex flex-col text-center py-[1rem] overflow-hidden">
+                  <span className="w-[3rem] h-[3rem] "></span>
+                  <span className="inline-block bg-purpleText w-[2rem] h-[.5rem] rounded-full -ml-1"></span>
+                </div>
+                <div className="flex flex-col text-center -ml-6">
                   <p className="text-purpleText font-bold text-3xl mb-2">6</p>
                   <span className="inline-block bg-purpleLight border-4 border-purpleText w-[3rem] h-[3rem] rounded-full shadow-purpleText2 shadow-md">
                     &nbsp;
                   </span>
                 </div>
-                <div className="flex flex-col text-center">
+                <div className="flex flex-col text-center py-[1rem] overflow-hidden">
+                  <span className="w-[3rem] h-[3rem] "></span>
+                  <span className="inline-block bg-purpleText w-[2rem] h-[.5rem] rounded-full -ml-1"></span>
+                </div>
+                <div className="flex flex-col text-center -ml-6">
                   <p className="text-purpleText font-bold text-3xl mb-2">7</p>
                   <span className="inline-block bg-purpleLight border-4 border-purpleText w-[3rem] h-[3rem] rounded-full shadow-purpleText2 shadow-md">
                     &nbsp;
@@ -295,7 +312,7 @@ export const LandingPage = () => {
           <h1 className="font-bold text-2xl md:text-4xl xl:text-5xl gradient-text bg-logo text-center w-full lg:leading-normal">
             Meet the Team
           </h1>
-          <div className="flex flex-wrap justify-center  xl:px-16 2xl:px-4 lg:flex-row gap-5">
+          <div className="flex flex-wrap justify-center  lg:px-10 xl:px-16 2xl:px-4 lg:flex-row gap-5">
             <TeamCard
               image={juan}
               name="Juan Carlos Yao"
