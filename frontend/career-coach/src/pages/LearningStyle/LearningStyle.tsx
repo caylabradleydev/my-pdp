@@ -1,24 +1,24 @@
-import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { CareerInfoCard, NavButton } from '../../components';
-import { useCareerDetails } from '../../context/CareerContext';
-import { useProgressState } from '../../context/ProgressContex/ProgressContext';
-import { ProgressTracker } from '../../components/ProgressTracker';
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { CareerInfoCard, NavButton } from "../../components";
+import { useCareerDetails } from "../../context/CareerContext";
+import { useProgressState } from "../../context/ProgressContex/ProgressContext";
+import { ProgressTracker } from "../../components/ProgressTracker";
 
 export const LearningStyle = () => {
-  const  { careerDetails, updateCareer } = useCareerDetails()
-  const [selectedCard, setSelectedCard] = useState<string | null>(null)
-  const navigate = useNavigate()
+  const { careerDetails, updateCareer } = useCareerDetails();
+  const [selectedCard, setSelectedCard] = useState<string | null>(null);
+  const navigate = useNavigate();
   const { setActiveStep } = useProgressState();
 
   const handleCardClick = (tag: string) => {
-    updateCareer('preferred_learning_style', tag)
-    setSelectedCard(tag)
-  }
+    updateCareer("preferred_learning_style", tag);
+    setSelectedCard(tag);
+  };
   // remove before shipping to production
   useEffect(() => {
-    console.log(careerDetails)
-  }, [careerDetails])
+    console.log(careerDetails);
+  }, [careerDetails]);
 
   useEffect(() => {
     setActiveStep(selectedCard ? 5 : 4); // Set active step based on whether a selection is made
@@ -26,15 +26,21 @@ export const LearningStyle = () => {
 
   const handleContinueClick = () => {
     if (selectedCard) {
-      navigate('/timeframe')
+      navigate("/timeframe");
     }
-  }
+  };
 
   return (
     <div className="flex justify-center min-h-screen w-full">
       <div className="flex flex-col w-full mt-28">
         <div className="flex justify-center mb-8">
-          <p className="text-purpleText text-center text-base lg:text-xl font-bold leading-[45px] lg:leading-[60px]">What is the preferred <span className="bg-learning-style gradient-text">learning style</span>?</p>
+          <p className="text-purpleText dark:text-lightPurple text-center text-base lg:text-xl font-bold leading-[45px] lg:leading-[60px]">
+            What is the preferred &nbsp;
+            <span className="bg-learning-style gradient-text">
+              learning style
+            </span>
+            ?
+          </p>
         </div>
         <div className="flex flex-col lg:flex-row gap-7 lg:gap-10 justify-center">
           <div>
@@ -42,7 +48,7 @@ export const LearningStyle = () => {
               text="Project Based"
               tag="Project"
               onCardClick={handleCardClick}
-              selected={selectedCard === 'Project'}
+              selected={selectedCard === "Project"}
             />
           </div>
           <div>
@@ -50,7 +56,7 @@ export const LearningStyle = () => {
               text="Video Based"
               tag="Video"
               onCardClick={handleCardClick}
-              selected={selectedCard === 'Video'}
+              selected={selectedCard === "Video"}
             />
           </div>
           <div>
@@ -58,7 +64,7 @@ export const LearningStyle = () => {
               text="Assessment Based"
               tag="Assessment"
               onCardClick={handleCardClick}
-              selected={selectedCard === 'Assessment'}
+              selected={selectedCard === "Assessment"}
             />
           </div>
           <div>
@@ -66,17 +72,24 @@ export const LearningStyle = () => {
               text="Micro Learning"
               tag="Micro Learning"
               onCardClick={handleCardClick}
-              selected={selectedCard === 'Micro Learning'}
+              selected={selectedCard === "Micro Learning"}
             />
           </div>
         </div>
         <div className="flex justify-between lg:mt-auto mt-20 mb-10 w-full">
-          <NavButton back to='/'>Back</NavButton>
-          <div style={{ flexGrow: 1}} className='lg:mx-[30rem] hidden lg:block'>
+          <NavButton back to="/">
+            Back
+          </NavButton>
+          <div
+            style={{ flexGrow: 1 }}
+            className="lg:mx-[30rem] hidden lg:block"
+          >
             <ProgressTracker />
           </div>
-          <div className='flex'>
-            <NavButton disabled={!selectedCard} onClick={handleContinueClick}>Continue</NavButton>
+          <div className="flex">
+            <NavButton disabled={!selectedCard} onClick={handleContinueClick}>
+              Continue
+            </NavButton>
           </div>
         </div>
         <div className="lg:hidden mb-10">
@@ -84,5 +97,5 @@ export const LearningStyle = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};

@@ -68,7 +68,7 @@ export const HoursPerWeek = () => {
             placeholder="0"
             onChange={handleInputChange}
           />
-          <span className="ml-4 text-xs">Hours</span>
+          <span className="ml-4 text-xs dark:text-lightPurple">Hours</span>
         </div>
         <div className="w-[943px] relative hidden lg:block">
           <input

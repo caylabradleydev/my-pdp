@@ -35,14 +35,16 @@ export const Budget: React.FC = () => {
         <div className="flex justify-center mb-8">
           <p className="text-purpleText dark:text-lightPurple text-base text-center lg:text-xl font-bold leading-[45px] lg:leading-[60px]">
             What is your &nbsp;
-            <span className="bg-budget gradient-text">total budget</span> per
-            month? (optional)
+            <span className="bg-budget gradient-text dark:text-lightPurple">
+              total budget
+            </span>{" "}
+            per month? (optional)
           </p>
         </div>
         <div className="flex justify-center">
           <div className="flex items-center w-[120px]">
             <InputBox placeholder="$100" onChange={handleInputChange} />
-            <span className="ml-4 text-xs">USD</span>
+            <span className="ml-4 text-xs dark:text-lightPurple">USD</span>
           </div>
         </div>
         <div className="flex justify-between mt-auto mb-10 w-full">
