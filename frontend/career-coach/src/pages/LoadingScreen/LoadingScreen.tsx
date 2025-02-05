@@ -82,7 +82,7 @@ export const LoadingScreen = () => {
             Loading your results...
           </p>
           {time > 60 && (
-            <p className="max-w-[350px] lg:max-w-[1200px] text-purpleText text-center mt-6 text-xxs lg:text-sm font-medium leading-[15px] lg:leading-[30px] mx-10">
+            <p className="max-w-[350px] lg:max-w-[1200px] text-purpleText text-center dark:text-lightPurple mt-6 text-xxs lg:text-sm font-medium leading-[15px] lg:leading-[30px] mx-10">
               Our server must be tired. Please bear with us while it wakes up!
             </p>
           )}
