@@ -37,13 +37,13 @@ export const NavBar: React.FC = () => {
         >
           {!noIcon && <img src={logo} className="h-10" alt="MyPDP Logo" />}
           {!noText ? (
-            <span className="self-center text-lg bg-logo gradient-text dark:text-buttonWhite font-bold whitespace-nowrap">
+            <h1 className="self-center text-lg bg-logo font-bold whitespace-nowrap bg-gradient-to-r from-purpleText2 to-cardHover inline-block text-transparent dark:text-buttonWhite bg-clip-text">
               MyPDP
-            </span>
+            </h1>
           ) : (
-            <span className="hidden lg:block self-center text-lg bg-logo gradient-text dark:text-buttonWhite font-bold whitespace-nowrap">
+            <h1 className="hidden lg:block self-center text-lg bg-logo  dark:text-buttonWhite font-bold whitespace-nowrap bg-gradient-to-r from-purpleText2 to-cardHover inline-block text-transparent bg-clip-text">
               MyPDP
-            </span>
+            </h1>
           )}
         </div>
       </div>

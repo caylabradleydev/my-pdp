@@ -27,7 +27,7 @@ export default {
         buttonWhite: "#FFFFFF",
         hoverButton: "#F3F5FF",
         clickedButton: "#E7EAFF",
-        ligthPurple: "#ECEEFB",
+        lightPurple: "#ECEEFB",
         purpleText: "#4835BD",
         buttonText: "#4263F1",
         line: "#4B4B4B",
@@ -37,8 +37,8 @@ export default {
         disabled: "#A9A9A9",
         cardHover: "#9FA4FF",
         blackText: "#1e1e1e",
-        bgDark: "060606",
-        bgDark2: "100B2B",
+        bgDark: "#060606",
+        bgDark2: "#100B2B",
       },
       backgroundImage: {
         "desired-job":
@@ -68,6 +68,9 @@ export default {
           "linear-gradient(90deg, #448FD9 3.21%, #A270C0 38.63%, #D76573 65.59%, #F0944C 96.17%)",
         "blurred-content":
           "linear-gradient(90deg, #448FD9 3.21%, #A270C0 44.51%, #D76573 75.95%, #F0944C 111.62%)",
+        logoDark: "linear-gradient(90deg, #ECEEFB 0%, #FFFFFF   100%)",
+        glass:
+          "linear-gradient( rgba(255, 255, 255, .2), rgba(255, 255, 255, .1))",
       },
     },
   },
@@ -81,6 +84,7 @@ export default {
           WebkitBackgroundClip: "text",
           WebkitTextFillColor: "transparent",
         },
+        ".gradient-text-dark": {},
         ".border-gradient": {
           borderImageSource: "var(--tw-gradient-stops)",
           borderImageSlice: 1,
