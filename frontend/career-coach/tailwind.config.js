@@ -84,7 +84,6 @@ export default {
           WebkitBackgroundClip: "text",
           WebkitTextFillColor: "transparent",
         },
-        ".gradient-text-dark": {},
         ".border-gradient": {
           borderImageSource: "var(--tw-gradient-stops)",
           borderImageSlice: 1,

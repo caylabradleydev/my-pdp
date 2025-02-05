@@ -227,7 +227,7 @@ export const LandingPage = () => {
             <div className="hidden lg:flex lg:col-span-2 m-auto">
               <div className="flex  m-auto">
                 <div className="flex flex-col text-center">
-                  <p className="text-purpleText font-bold text-3xl mb-2 text-buttonWhite">
+                  <p className="text-purpleText font-bold text-3xl mb-2 dark:text-buttonWhite">
                     1
                   </p>
                   <span className="inline-block bg-purpleText border-3 border-purpleText2 w-[3rem] h-[3rem] rounded-full shadow-purpleText2 shadow-md"></span>
@@ -237,7 +237,7 @@ export const LandingPage = () => {
                   <span className="inline-block bg-purpleText w-[2rem] h-[.5rem] rounded-full -ml-1"></span>
                 </div>
                 <div className="flex flex-col text-center -ml-6">
-                  <p className="text-purpleText font-bold text-3xl mb-2 text-buttonWhite">
+                  <p className="text-purpleText font-bold text-3xl mb-2 dark:text-buttonWhite">
                     2
                   </p>
                   <span className="inline-block bg-purpleText border-3 border-purpleText2 w-[3rem] h-[3rem] rounded-full shadow-purpleText2 shadow-md"></span>
@@ -247,7 +247,7 @@ export const LandingPage = () => {
                   <span className="inline-block bg-purpleText w-[2rem] h-[.5rem] rounded-full -ml-1"></span>
                 </div>
                 <div className="flex flex-col text-center -ml-6">
-                  <p className="text-purpleText font-bold text-3xl mb-2 text-buttonWhite">
+                  <p className="text-purpleText font-bold text-3xl mb-2 dark:text-buttonWhite">
                     3
                   </p>
                   <span className="inline-block bg-purpleText w-[3rem] h-[3rem] rounded-full shadow-purpleText2 shadow-md"></span>
@@ -257,7 +257,7 @@ export const LandingPage = () => {
                   <span className="inline-block bg-purpleText w-[2rem] h-[.5rem] rounded-full -ml-1"></span>
                 </div>
                 <div className="flex flex-col text-center -ml-6">
-                  <p className="text-purpleText font-bold text-3xl mb-2 text-buttonWhite">
+                  <p className="text-purpleText font-bold text-3xl mb-2 dark:text-buttonWhite">
                     4
                   </p>
                   <span className="inline-block bg-purpleText w-[3rem] h-[3rem] rounded-full shadow-purpleText2 shadow-md"></span>
@@ -267,7 +267,7 @@ export const LandingPage = () => {
                   <span className="inline-block bg-purpleText w-[2rem] h-[.5rem] rounded-full -mx-1"></span>
                 </div>
                 <div className="flex flex-col text-center -ml-6">
-                  <p className="text-purpleText font-bold text-3xl mb-2 text-buttonWhite">
+                  <p className="text-purpleText font-bold text-3xl mb-2 dark:text-buttonWhite">
                     5
                   </p>
                   <span className="inline-block bg-purpleLight border-4 border-purpleText w-[3rem] h-[3rem] rounded-full shadow-purpleText2 shadow-md">
@@ -279,7 +279,7 @@ export const LandingPage = () => {
                   <span className="inline-block bg-purpleText w-[2rem] h-[.5rem] rounded-full -ml-1"></span>
                 </div>
                 <div className="flex flex-col text-center -ml-6">
-                  <p className="text-purpleText font-bold text-3xl mb-2 text-buttonWhite">
+                  <p className="text-purpleText font-bold text-3xl mb-2 dark:text-buttonWhite">
                     6
                   </p>
                   <span className="inline-block bg-purpleLight border-4 border-purpleText w-[3rem] h-[3rem] rounded-full shadow-purpleText2 shadow-md">
@@ -291,7 +291,7 @@ export const LandingPage = () => {
                   <span className="inline-block bg-purpleText w-[2rem] h-[.5rem] rounded-full -ml-1"></span>
                 </div>
                 <div className="flex flex-col text-center -ml-6">
-                  <p className="text-purpleText font-bold text-3xl mb-2 text-buttonWhite">
+                  <p className="text-purpleText font-bold text-3xl mb-2 dark:text-buttonWhite">
                     7
                   </p>
                   <span className="inline-block bg-purpleLight border-4 border-purpleText w-[3rem] h-[3rem] rounded-full shadow-purpleText2 shadow-md">
